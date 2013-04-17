@@ -21,7 +21,7 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 App::uses('Controller', 'Controller');
-
+public $components = array('DebugKit.Toolbar');
 /**
  * Application Controller
  *
