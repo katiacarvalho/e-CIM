@@ -4,13 +4,12 @@
  * Generic CSS for CakePHP
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @copyright     Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
  * @package       app.webroot.css
  * @since         CakePHP(tm)
@@ -24,7 +23,7 @@
 
 /** General Style Info **/
 body {
-	background: #003d4c;
+	background: #F8F8FF;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -74,18 +73,133 @@ p {
 }
 
 /** Layout **/
+
+#logo{
+    float: left;
+    position: relative;
+    width: 271px;
+    height: 51px;
+    margin-top: 12px;
+    margin-right: 0px;
+    display: block;
+}
+#topo{
+    width: 100%; /*text-align: left;*/
+    display: block;
+    height: 110px;
+    margin-bottom: 10px;
+    background: url('../img/container-bg.jpg');
+    background-repeat: repeat-x;
+}
+
+#topHalf{
+    width: 980px;
+    display: block;
+    height: 75px;
+    margin: auto;
+}
+
+#topHalf2{
+    width: 980px;
+    display: block;
+    height: 35px;
+    margin: auto;
+}
+
+.menu-global{
+    display: inline-block;
+    width: 730px;
+    height: 35px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+/*    width: 140px;
+    float: left;
+    padding: 40px 0;*/
+}
+   
+/*#menu-global ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    height: 35px;
+}*/
+
+#menu-global ul li{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    height: 35px;
+}
+
+#menu-global ul li a{
+    display: block;
+    text-align: center;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 14px 3px 14px;
+    border: 1px transparent solid;
+    outline: none;
+}
+
+#corpo{
+    width: 980px;
+    display: table;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#banner{
+    width: 978px;
+    display: block;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+}
+
 #container {
-	text-align: left;
+    width: 980px;
+    display: table;    
+}
+
+#sidebar-left{
+    display: table;
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#avisos{
+    height: 35px;
+    width: 200px;
+    margin-bottom: 10px;
+    background: url('../img/avisos.png');
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+#session{
+    display: inline-block;
+    float: left;
+    width: 560px;
+    color: #191970;
+
 }
 
 #header{
-	padding: 10px 20px;
+	width: 980px; /*padding40px 249px;*/
+        height: 75px;
+        margin: auto;
+        color: #000000;
 }
 #header h1 {
 	line-height:20px;
-	background: #003d4c url('../img/cake.icon.png') no-repeat left;
+	background: #003d4c; /*url('../img/cake.icon.png') no-repeat left;*/
 	color: #fff;
-	padding: 0px 30px;
+	padding: 55px 30px; /*0px 30px;*/
 }
 #header h1 a {
 	color: #fff;
@@ -99,16 +213,33 @@ p {
 	text-decoration: underline;
 }
 #content{
-	background: #fff;
-	clear: both;
+	background:  #F8F8FF /*#fff*/;
+/*	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
-	overflow: auto;
+	overflow: auto;*/
+        width: 980px;
+        display: table;
+        margin: auto;
+        margin-bottom: 10px;
 }
 #footer {
-	clear: both;
-	padding: 6px 10px;
-	text-align: right;
+	display: block;
+        margin: auto;
+        height: 85px;
+        font-size: 75%;
+        text-align: center;
+        padding: 20px 0px;
+        color: #3D3D5F;
+        width: 980px;
+        border-top: #ECECEC solid 1px;        
+}
+
+#informacoes{
+    width: 780px;
+    display: inline-block;
+    float: left;
+    line-height: 25px;
 }
 
 /** containers **/
@@ -116,11 +247,11 @@ div.form,
 div.index,
 div.view {
 	float:right;
-	width:76%;
+	width:76%; 
 	border-left:1px solid #666;
-	padding:10px 2%;
+	padding:10px 2%; 
 }
-div.actions {
+divl.actions {
 	float:left;
 	width:16%;
 	padding:10px 1.5%;
